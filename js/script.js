@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors: ['home_screen', 'events_screen', 'about_screen', 'team_screen', 'calendar_screen', 'contact_screen'],
+        anchors: ['home_screen', 'events_screen', 'about_screen', 'team_screen', 'contact_screen'],
     	slidesNavigation: true,
     	resize: true,
     	scrollOverflow: true,
