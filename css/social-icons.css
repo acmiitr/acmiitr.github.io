@@ -607,6 +607,14 @@
 	background: #f1628b url(../img/icons/social_big/flickr_white.png) no-repeat;
 }
 
+.social-googleplus { 
+	background: #f6f6f6 url(../img/icons/social_big/googleplus_grey.png) no-repeat;
+}
+
+.social-googleplus-hover { 
+	background: #dd4b39 url(../img/icons/social_big/googleplus_white.png) no-repeat;
+}
+
 .social-html5 { 
 	background: #f6f6f6 url(../img/icons/social_big/html5_grey.png) no-repeat;
 }
@@ -886,6 +894,14 @@
 
 .social-small-flickr-hover { 
 	background: #f1628b url(../img/icons/social_small/flickr_white.png) no-repeat;
+}
+
+.social-small-googleplus { 
+	background: #f6f6f6 url(../img/icons/social_small/googleplus_grey.png) no-repeat;
+}
+
+.social-small-googleplus-hover { 
+	background: #dd4b39 url(../img/icons/social_small/googleplus_white.png) no-repeat;
 }
 
 .social-small-html5 { 
