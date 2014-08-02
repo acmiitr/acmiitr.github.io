@@ -3,6 +3,11 @@ $(document).ready(function() {
     	slidesNavigation: true,
     	resize: true,
     	scrollOverflow: true,
-    	css3: true
+    	menu: 'nav',
+    	css3: true,
+        paddingTop: '100px'
     });
+    /*$('.section').slimScroll({
+    	width: '100%'
+    });*/
 });
