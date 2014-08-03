@@ -7,7 +7,8 @@ $(document).ready(function() {
     	menu: 'nav',
     	css3: true,
         paddingTop: '100px',
-        menu: '.nav'
+        menu: '.nav',
+        verticalCentered: false
     });
     /*$('.section').slimScroll({
     	width: '100%'
