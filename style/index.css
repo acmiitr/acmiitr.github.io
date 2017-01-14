@@ -11,6 +11,12 @@ p {
     letter-spacing: 1.5px;
 }
 
+.heading {
+	font: Montserrat, sans-serif;
+	font-size: 2em;
+    line-height: 1.8;
+}
+
 .margin {
     margin-bottom: 45px;
 }
@@ -91,6 +97,10 @@ p {
     letter-spacing: 1.5px;
 }
 
+.slideanim {
+    visibility: hidden;
+}
+
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
@@ -151,4 +161,9 @@ p {
 
 .item span {
     font-style: normal;
+}
+
+.fa {
+    font-size: 100px;
+    color: #005f8e;
 }
