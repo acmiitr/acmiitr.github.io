@@ -1,20 +1,16 @@
 body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
+    font: 16px Montserrat, sans-serif;
+    line-height: 1.6;
     color: #f5f6f7;
     position: relative;
-}
-
-p {
-    font: 17px Source, sans-serif;
-    line-height: 1.8;
-    letter-spacing: 1.5px;
+    font-weight: 300;
 }
 
 .heading {
 	font: Montserrat, sans-serif;
 	font-size: 2em;
-    line-height: 1.8;
+    line-height: 1.6;
+    font-weight: 900;
 }
 
 .margin {
@@ -90,13 +86,6 @@ p {
     padding-bottom: 70px;
 }
 
-#activity-container {
-    padding: 5px 6vw 5px 6vw;
-    font: 17px Source, sans-serif;
-    line-height: 1.8;
-    letter-spacing: 1.5px;
-}
-
 .slideanim {
     visibility: hidden;
 }
@@ -129,26 +118,6 @@ p {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
-}
-
-.carousel-control.right,
-.carousel-control.left {
-    background-image: none;
-    color: #005f8e;
-}
-
-.carousel-indicators li {
-    border-color: #005f8e;
-}
-
-.carousel-indicators li.active {
-    background-color: #005f8e;
-}
-
-.glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #005f8e;
 }
 
 .item h4 {
