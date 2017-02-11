@@ -13,6 +13,12 @@ body {
     font-weight: 900;
 }
 
+.subheading {
+    font: Montserrat, sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
 .margin {
     margin-bottom: 45px;
 }
@@ -32,12 +38,12 @@ body {
 .bg-foot {
     background-color: #2f2f2f;
     /* Black Gray */
-    color: #fff;
+    color: #ffffff;
 }
 
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .navbar {
@@ -132,7 +138,7 @@ body {
     font-style: normal;
 }
 
-.fa {
-    font-size: 100px;
-    color: #005f8e;
+#footer {
+    padding-left: 50px;
+    padding-right: 50px;
 }
