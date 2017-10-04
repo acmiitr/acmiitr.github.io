@@ -188,3 +188,8 @@ body {
     height: 100%;
 }
 /* Resposive IFrame */
+
+.team-img {
+    width: 85%;
+    display: inline-block;
+}
