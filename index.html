@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#about">INITIATIVES</a></li>
                     <li><a href="#events">EVENTS</a></li>
                     <li><a href="#team">TEAM</a></li>
                     <li><a href="./blog">BLOG</a></li>
@@ -46,18 +46,29 @@
                 </center>
             </div>
             <div class="col-sm-8 text-justify" style="height:100%;">
-                <p>
-                    The Association for Computing Machinery is a U.S.-based international learned society for computing. It was founded in 1947 and is the world's largest and most prestigious scientific and educational computing society. ACM is widely recognized as the premier membership organization for computing professionals, delivering resources that advance computing as a science and a profession, enable professional development, and promote policies and research that benefit society.
+                <p class="text-justify margin">
+                    The IIT Roorkee ACM Student Chapter is an official student body incepted in 2014 under the aegis of Department of Computer Science and Engineering, IIT Roorkee. The chapter aims at uniting the computing fraternity at IIT Roorkee under one tag and allowing the students to learn together and share their knowledge to cater the interests of the individuals as well as the institute as a whole.The chapter organizes a number of events including programming contests, talks by renowned speakers, workshops etc.which give the students an exposure to the competitive computing world as well as allow them to understand the advancements going on in the computing sphere worldwide.
                 </p>
             </div>
         </div>
     </div>
     <div class="container-fluid bg-2 text-center" id="about">
-        <h2 class="heading margin">About</h2>
+        <h2 class="heading margin">Initiatives</h2>
         <div class="container">
-            <p class="text-justify margin">
-                The IIT Roorkee ACM Student Chapter is an official student body incepted in 2014 under the aegis of Department of Computer Science and Engineering, IIT Roorkee. The chapter aims at uniting the computing fraternity at IIT Roorkee under one tag and allowing the students to learn together and share their knowledge to cater the interests of the individuals as well as the institute as a whole.The chapter organizes a number of events including programming contests, talks by renowned speakers, workshops etc.which give the students an exposure to the competitive computing world as well as allow them to understand the advancements going on in the computing sphere worldwide.
-            </p>
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header active">First</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Second</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header">Third</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="container-fluid bg-1 text-center" id="events">
@@ -139,9 +150,12 @@
                 });
             }
         });
-    });
-    $('.carousel.carousel-slider').carousel({
-        fullWidth: true
+
+        $('.collapsible').collapsible();
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true
+        });
     });
     </script>
 </body>
