@@ -2,261 +2,271 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ACM Student Chapter &middot; IIT Roorkee</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./script/materialize.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style/materialize.css">
-    <link rel="stylesheet" type="text/css" href="./style/index.css">
-    <style type="text/css">
-    	.carousel, .carousel-inner > .item {
-			display: run-in;
-			width: 100%;
-			height: auto!important;
-		}
-		.carousel .item{
-		    min-height: 280px;
-		}
-		.carousel .item img{
-		    margin: 0 auto;
-		    display: block;
-			height: auto;
-			max-width: 100%;
-			line-height: 1;
-		}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ACM Student Chapter &middot; IIT Roorkee</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./script/materialize.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style/materialize.css">
+	<link rel="stylesheet" type="text/css" href="./style/index.css">
+	<style type="text/css">
+	.carousel,
+	.carousel-inner>.item {
+		display: run-in;
+		width: 100%;
+		height: auto!important;
+	}
+
+	.carousel .item {
+		min-height: 280px;
+	}
+
+	.carousel .item img {
+		margin: 0 auto;
+		display: block;
+		height: auto;
+		max-width: 100%;
+		line-height: 1;
+	}
 	</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">ACM, IIT Roorkee</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#initiatives">INITIATIVES</a></li>
-                    <li><a href="#events">EVENTS</a></li>
-                    <li><a href="#team">TEAM</a></li>
-                    <!--<li><a href="./blog">BLOG</a></li>-->
-                    <li><a href="#footer">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container bg-1" id="home">
-        <div class="row vcenter">
-            <div class="col-sm-4">
-                <center>
-                    <img src="img/acm_logo.png" class="img-responsive" alt="logo">
-                </center>
-            </div>
-            <div class="col-sm-8 text-justify" style="height:100%;">
-                <p class="text-justify margin">
-                    The IIT Roorkee ACM Student Chapter is an official student body incepted in 2014 under the aegis of Department of Computer Science and Engineering, IIT Roorkee. The chapter aims at uniting the computing fraternity at IIT Roorkee under one tag and allowing the students to learn together and share their knowledge to cater the interests of the individuals as well as the institute as a whole.The chapter organizes a number of events including programming contests, talks by renowned speakers, workshops etc.which give the students an exposure to the competitive computing world as well as allow them to understand the advancements going on in the computing sphere worldwide.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-2 text-center" id="initiatives">
-        <h2 class="heading margin">Initiatives</h2>
-        <div class="container">
-            <ul class="collapsible popout" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header active"><i class="fa fa-music"></i> Project: Genre Classifier</div>
-                    <div class="collapsible-body"><span>A music genre classifier which classifies songs based on their audio frequencies. A mini project for making students learn how to implement various Machine Learning Algorithms and gain a clearer insight over various concepts of Machine Learning under "Learning through Projects" series.</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="fa fa-camera"></i> Project: Image Super-Resolution</div>
-                    <div class="collapsible-body"><span>The idea is to improve the resolution of the image by removing pixelation using concepts of Convolutional Neural Networks (Machine Learning). Also, this project is under "Learning through Projects" series.</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="fa fa-headphones"></i> Project: Music Recommendation System</div>
-                    <div class="collapsible-body"><span>A Music Recommendation system which suggests/predicts songs on the basis of user song stream history. System uses the meta-data of the audio files as the data. Also, this project is under "Learning through Projects" series.</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="fa fa-linkedin-square"></i> Project: Linkedin for Campus</div>
-                    <div class="collapsible-body"><span>A prototype of the well-known website, LinkedIn. The aim of the project is to connect the Alumnis of the institute with the student body of IITR. Also, this project is under "Learning through Projects" series.</span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="fa fa-btc"></i> Reasearch Paper Discussion Group</div>
-                    <div class="collapsible-body"><span>The aim is to promote research culture in the institute through discussions on Research Papers on various topics. The most recent topic was Block-chains, of which, Bitcoin is a widely known application.</span></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="container-fluid bg-1 text-center" id="events">
-        <div id="eventCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-	            <li data-target="#eventCarousel" data-slide-to="0" class="active"></li>
-	            <li data-target="#eventCarousel" data-slide-to="1"></li>
-	            <li data-target="#eventCarousel" data-slide-to="2"></li>
-	        </ol>
-	        <div class="carousel-inner">
-	            <div class="active item">
-	                <img src="img/events/interntalk.jpg" alt="Internship Talk">
-	                <div class="carousel-caption">
-    					<h3>INTERNSHIP TALK</h3>
-    					<p>ACM Student Chapter, IIT Roorkee, organised a panel discussion for enlightening students for internships. (both on-campus and off-campus)</p>
-        			</div>
-	            </div>
-	            <div class="item">
-	                <img src="img/events/foreigninterntalk.jpg" alt="Speaker">
-	                <div class="carousel-caption">
-    					<h3>FOREIGN RESEACRH INTERNSHIPS</h3>
-    					<p>The talk covered procedure for applying, building personal profiles and experiences of speakers from foreign internships and pursuing research.</p>
-        			</div>
-	            </div>
-	            <div class="item">
-	                <img src="img/events/cfd2017.jpg" alt="...">
-	                <div class="carousel-caption">
-    					<h3>MICROSOFT CODE.FUN.DO</h3>
-    					<p>62 apps submitted | 102 teams | over 500 people engaged</p>
-        			</div>
-	            </div>
-	        </div>
-            <a class="carousel-control left" href="#eventCarousel" data-slide="prev">
-	            <span class="glyphicon glyphicon-chevron-left"></span>
-	        </a>
-	        <a class="carousel-control right" href="#eventCarousel" data-slide="next">
-	            <span class="glyphicon glyphicon-chevron-right"></span>
-	        </a>
-        </div>
-    </div>
-    <div class="container-fluid bg-2 text-center" id="team">
-        <div class="container">
-            <h2 class="heading margin">Team</h2>
-            <br>
-            <h3 class="subheading margin">Office Bearers</h3>
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="img/team/sateesh.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>P. Sateesh Kumar</h5>
-                    <p>Faculty Advisor</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/anshul.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Anshul Shah</h5>
-                    <p>Chair</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/akash.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Akash Gupta</h5>
-                    <p>Vice Chair</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/amanazad.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Aman Azad</h5>
-                    <p>Treasurer</p>
-                </div>
-            </div>
-            <h3 class="subheading margin">Executive Council</h3>
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="img/team/haresh.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Haresh Khanna</h5>
-                    <p>Web head</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/nisheeth.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Nisheeth Golakiya</h5>
-                    <p>Project Co-ordinator</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/mohit.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Mohit Bhalla</h5>
-                    <p>Events head</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/aman.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Aman Tandon</h5>
-                    <p>Design head</p>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-3">
-                    <img src="img/team/amritya.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Amritya Vagmi</h5>
-                    <p>Promotions head</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/sandeep.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Sandeep Pal</h5>
-                    <p>Promotions Co-head</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="img/team/brajesh.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Brajesh Kumar</h5>
-                    <p>Social Media head</p>
-                </div>
-                <div class="col-sm-3">
-                	<img src="img/team/amanagarwal.jpg" class="img-responsive img-circle margin team-img" alt="Image">
-                    <h5>Aman Agarwal</h5>
-                    <p>Outreach head</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="footer">
-        <div class="container-fluid">
-            <div class="row vcenter">
-                <div class="col-sm-4">
-                    Department of Computer Science and Engineering,
-                    <br> Indian Institute of Technology Roorkee,
-                    <br> Roorkee, Uttarakhand - 247667,
-                    <br> India.
-                </div>
-                <div class="col-sm-3 text-center">
-                    <h3 class="subheading">Contact</h3>
-                    <div>
-                        <div class="round-button vcenter"><a href="mailto:acmiitr@gmail.com"><i class="fa fa-envelope"></i></a></div>
-                        <div class="round-button vcenter"><a href="https://facebook.com/acmiitr"><i class="fa fa-facebook-f"></i></a></div>
-                    </div>
-                </div>
-                <div class="col-sm-5 intrinsic-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d899.6210410931732!2d77.89555325170318!3d29.86334130862429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92a1d55eaf85c035!2sDepartment+of+Computer+Science+and+Engineering!5e0!3m2!1sen!2sin!4v1488304692596" width="310" height="550" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid text-center">
-            <p>ACM Student Chapter - IIT Roorkee · © 2017</p>
-        </div>
-    </div>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $(".navbar a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ACM, IIT Roorkee</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#initiatives">INITIATIVES</a></li>
+					<li><a href="#events">EVENTS</a></li>
+					<li><a href="#team">TEAM</a></li>
+					<!--<li><a href="./blog">BLOG</a></li>-->
+					<li><a href="#footer">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container bg-1" id="home">
+		<div class="row vcenter">
+			<div class="col-sm-4">
+				<center>
+					<img src="img/acm_logo.png" class="img-responsive" alt="logo">
+				</center>
+			</div>
+			<div class="col-sm-8 text-justify" style="height:100%;">
+				<p class="text-justify margin">
+					The IIT Roorkee ACM Student Chapter is an official student body incepted in 2014 under the aegis of Department of Computer Science and Engineering, IIT Roorkee. The chapter aims at uniting the computing fraternity at IIT Roorkee under one tag and allowing the students to learn together and share their knowledge to cater the interests of the individuals as well as the institute as a whole.The chapter organizes a number of events including programming contests, talks by renowned speakers, workshops etc.which give the students an exposure to the competitive computing world as well as allow them to understand the advancements going on in the computing sphere worldwide.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-2 text-center" id="initiatives">
+		<h2 class="heading margin">Initiatives</h2>
+		<div class="container">
+			<ul class="collapsible popout" data-collapsible="accordion">
+				<li>
+					<div class="collapsible-header active"><i class="fa fa-music"></i> Project: Genre Classifier</div>
+					<div class="collapsible-body"><span>A music genre classifier which classifies songs based on their audio frequencies. A mini project for making students learn how to implement various Machine Learning Algorithms and gain a clearer insight over various concepts of Machine Learning under "Learning through Projects" series.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="fa fa-camera"></i> Project: Image Super-Resolution</div>
+					<div class="collapsible-body"><span>The idea is to improve the resolution of the image by removing pixelation using concepts of Convolutional Neural Networks (Machine Learning). Also, this project is under "Learning through Projects" series.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="fa fa-headphones"></i> Project: Music Recommendation System</div>
+					<div class="collapsible-body"><span>A Music Recommendation system which suggests/predicts songs on the basis of user song stream history. System uses the meta-data of the audio files as the data. Also, this project is under "Learning through Projects" series.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="fa fa-linkedin-square"></i> Project: Linkedin for Campus</div>
+					<div class="collapsible-body"><span>A prototype of the well-known website, LinkedIn. The aim of the project is to connect the Alumnis of the institute with the student body of IITR. Also, this project is under "Learning through Projects" series.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="fa fa-btc"></i> Reasearch Paper Discussion Group</div>
+					<div class="collapsible-body"><span>The aim is to promote research culture in the institute through discussions on Research Papers on various topics. The most recent topic was Block-chains, of which, Bitcoin is a widely known application.</span></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid bg-1 text-center" id="events">
+		<div id="eventCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#eventCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#eventCarousel" data-slide-to="1"></li>
+				<li data-target="#eventCarousel" data-slide-to="2"></li>
+				<!-- <li data-target="#eventCarousel" data-slide-to="3"></li> -->
+			</ol>
+			<div class="carousel-inner">
+				<!-- <div class="active item">
+					<img src="img/events/internTalk.jpg" alt="Internship Talk">
+					<div class="carousel-caption">
+						<h3>INTERNSHIP TALK</h3>
+						<p>ACM Student Chapter, IIT Roorkee, organised a panel discussion for enlightening students for internships. (both on-campus and off-campus)</p>
+					</div>
+				</div> -->
+				<div class="active item">
+					<img src="img/events/internTalk.jpg" alt="Internship Talk">
+					<div class="carousel-caption">
+						<h3>INTERNSHIP TALK</h3>
+						<p>ACM Student Chapter, IIT Roorkee, organised a panel discussion for enlightening students for internships. (both on-campus and off-campus)</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/events/foreignInternTalk.jpg" alt="Speaker">
+					<div class="carousel-caption">
+						<h3>FOREIGN RESEACRH INTERNSHIPS</h3>
+						<p>The talk covered procedure for applying, building personal profiles and experiences of speakers from foreign internships and pursuing research.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/events/cfd2017.jpg" alt="...">
+					<div class="carousel-caption">
+						<h3>MICROSOFT CODE.FUN.DO</h3>
+						<p>62 apps submitted | 102 teams | over 500 people engaged</p>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control left" href="#eventCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="carousel-control right" href="#eventCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+	<div class="container-fluid bg-2 text-center" id="team">
+		<div class="container">
+			<h2 class="heading margin">Team</h2>
+			<br>
+			<h3 class="subheading margin">Office Bearers</h3>
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/team/sateesh.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>P. Sateesh Kumar</h5>
+					<p>Faculty Advisor</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/anshul.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Anshul Shah</h5>
+					<p>Chair</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/akash.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Akash Gupta</h5>
+					<p>Vice Chair</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/amanazad.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Aman Azad</h5>
+					<p>Treasurer</p>
+				</div>
+			</div>
+			<h3 class="subheading margin">Executive Council</h3>
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/team/haresh.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Haresh Khanna</h5>
+					<p>Web head</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/nisheeth.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Nisheeth Golakiya</h5>
+					<p>Project Co-ordinator</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/mohit.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Mohit Bhalla</h5>
+					<p>Events head</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/aman.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Aman Tandon</h5>
+					<p>Design head</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="img/team/amritya.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Amritya Vagmi</h5>
+					<p>Promotions head</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/sandeep.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Sandeep Pal</h5>
+					<p>Promotions Co-head</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/brajesh.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Brajesh Kumar</h5>
+					<p>Social Media head</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/team/amanagarwal.jpg" class="img-responsive img-circle margin team-img" alt="Image">
+					<h5>Aman Agarwal</h5>
+					<p>Outreach head</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" id="footer">
+		<div class="container-fluid">
+			<div class="row vcenter">
+				<div class="col-sm-4">
+					Department of Computer Science and Engineering,
+					<br> Indian Institute of Technology Roorkee,
+					<br> Roorkee, Uttarakhand - 247667,
+					<br> India.
+				</div>
+				<div class="col-sm-3 text-center">
+					<h3 class="subheading">Contact</h3>
+					<div>
+						<div class="round-button vcenter"><a href="mailto:acmiitr@gmail.com"><i class="fa fa-envelope"></i></a></div>
+						<div class="round-button vcenter"><a href="https://facebook.com/acmiitr"><i class="fa fa-facebook-f"></i></a></div>
+					</div>
+				</div>
+				<div class="col-sm-5 intrinsic-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d899.6210410931732!2d77.89555325170318!3d29.86334130862429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92a1d55eaf85c035!2sDepartment+of+Computer+Science+and+Engineering!5e0!3m2!1sen!2sin!4v1488304692596" width="310" height="550" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-center">
+			<p>ACM Student Chapter - IIT Roorkee · © 2017</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".navbar a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
 
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function() {
-                    window.location.hash = hash;
-                });
-            }
-        });
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, function() {
+					window.location.hash = hash;
+				});
+			}
+		});
 
-        $('.collapsible').collapsible();
+		$('.collapsible').collapsible();
 
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true
-        });
-    });
-    </script>
+		$('.carousel.carousel-slider').carousel({
+			fullWidth: true
+		});
+	});
+	</script>
 </body>
 
 </html>
