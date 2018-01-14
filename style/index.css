@@ -2,7 +2,6 @@ body {
     font: 16px Montserrat, sans-serif;
     line-height: 1.6;
     color: #f5f6f7;
-    position: relative;
     font-weight: 300;
 }
 
@@ -192,4 +191,11 @@ body {
 .team-img {
     width: 85%;
     display: inline-block;
+}
+
+#toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 0px;
+    left:40%;
 }

@@ -265,7 +265,16 @@
 		$('.carousel.carousel-slider').carousel({
 			fullWidth: true
 		});
+
+		var $toastButton = $('<button class="btn-flat toast-action" onclick = "navigateToLink()">LINK</button>')
+		var $toastContent = $('<span>Eminent Speaker Program</span>').add($toastButton);
+		Materialize.toast($toastContent, 10000);
 	});
+
+	var navigateToLink = function() {
+		Materialize.Toast.removeAll();
+		window.open("https://www.facebook.com/events/1453594811432606/", "_blank");
+	}
 	</script>
 </body>
 
