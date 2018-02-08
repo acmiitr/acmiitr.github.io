@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-02-02T12:51:48+05:30</updated><id>/</id><title type="html">ACM IIT Roorkee Chapter</title><entry><title type="html">OS Discussion - Session 1</title><link href="/2018/OS-talk-1" rel="alternate" type="text/html" title="OS Discussion - Session 1" /><published>2018-01-26T00:16:30+05:30</published><updated>2018-01-26T00:16:30+05:30</updated><id>/2018/OS-talk-1</id><content type="html" xml:base="/2018/OS-talk-1">&lt;p&gt;Reference: &lt;a href=&quot;http://pages.cs.wisc.edu/~dusseau/Classes/CS537-F07/Lectures/lecture1.pdf&quot;&gt;Slide - Overview&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-08T23:17:29+05:30</updated><id>http://localhost:4000/</id><title type="html">ACM IIT Roorkee Chapter</title><entry><title type="html">OS Discussion - Session 2</title><link href="http://localhost:4000/2018/OS-talk-2" rel="alternate" type="text/html" title="OS Discussion - Session 2" /><published>2018-01-30T00:16:30+05:30</published><updated>2018-01-30T00:16:30+05:30</updated><id>http://localhost:4000/2018/OS-talk-2</id><content type="html" xml:base="http://localhost:4000/2018/OS-talk-2">&lt;h2 id=&quot;chapter-4&quot;&gt;Chapter 4&lt;/h2&gt;
+
+&lt;p&gt;Date: 26th Jan 2018
+Reference:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-virtualization.pdf&quot;&gt;Virtualization - Dialogue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf&quot;&gt;Virtualization - Processes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf&quot;&gt;Virtualization - Process API&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;the-abstraction-the-process&quot;&gt;The Abstraction: The process&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Process: Simply a running program.
+    &lt;ul&gt;
+      &lt;li&gt;Program is just a bunch of instructions.&lt;/li&gt;
+      &lt;li&gt;OS takes these instructions and sets them running.&lt;/li&gt;
+      &lt;li&gt;Transforms a program into a process.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Virtualisation: The illusion that each process has its own CPU.
+    &lt;ul&gt;
+      &lt;li&gt;There are a lot of process running simultaneously.&lt;/li&gt;
+      &lt;li&gt;Each process needs to access CPU resources.&lt;/li&gt;
+      &lt;li&gt;Time sharing is a method used to share the CPU time among processes.&lt;/li&gt;
+      &lt;li&gt;Each process feels that the entire CPU is dedicated to it.&lt;/li&gt;
+      &lt;li&gt;But in reality, CPU shares its resources with everybody.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to accomplish virtualisation ?
+    &lt;ul&gt;
+      &lt;li&gt;Mechanisms: Low level machinery.&lt;/li&gt;
+      &lt;li&gt;Example: Context Switch which allows to switch between processes for time sharing.&lt;/li&gt;
+      &lt;li&gt;Policies: High level machinery.&lt;/li&gt;
+      &lt;li&gt;Policies are used for decision making in the OS.&lt;/li&gt;
+      &lt;li&gt;Example: Job scheduling policies like LRU to decide which programs should be run.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Process API: Interfaces used to directly interact with the OS.
+    &lt;ul&gt;
+      &lt;li&gt;Create: Interface for creating a new process.&lt;/li&gt;
+      &lt;li&gt;Destroy: Interface to forcefully killing a particular process if not shut automatically.&lt;/li&gt;
+      &lt;li&gt;Wait : Waiting interface to wait for a process to do something.&lt;/li&gt;
+      &lt;li&gt;Status: Interface to get status info.&lt;/li&gt;
+      &lt;li&gt;Miscellaneous Control: Interface for other purpose like suspending a certain application.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Process Creation:
+    &lt;ul&gt;
+      &lt;li&gt;OS loads data and code from disk to main memory.&lt;/li&gt;
+      &lt;li&gt;Earlier: Eager Loading, i.e, all loaded at ones.&lt;/li&gt;
+      &lt;li&gt;Now: Lazy Loading, i.e, Load most important parts.&lt;/li&gt;
+      &lt;li&gt;Some memory for program’s run time stack.&lt;/li&gt;
+      &lt;li&gt;Stack: Local variables , function parameters, return addresses, etc.&lt;/li&gt;
+      &lt;li&gt;Some memory for heap used for dynamically allocated data.&lt;/li&gt;
+      &lt;li&gt;Heap: Used for linked list, trees, hash tables, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Process States:
+    &lt;ul&gt;
+      &lt;li&gt;Running: Process running on a processor&lt;/li&gt;
+      &lt;li&gt;Ready: Ready to run but currently not run by OS at the given moment.&lt;/li&gt;
+      &lt;li&gt;Blocked: Process not ready to run until some event like I/O occurs.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Data Structures: OS wants to know what the process is doing.  Hence, some data structures are required to maintain relevant info. About the process.
+    &lt;ul&gt;
+      &lt;li&gt;Process Control Block(PCB) : Analogous to a process list.&lt;/li&gt;
+      &lt;li&gt;PCBs keeps track of all running programs of the system.&lt;/li&gt;
+      &lt;li&gt;Every process has a particular execution context.&lt;/li&gt;
+      &lt;li&gt;Executions contexts are used for context switching between processes for time sharing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&quot;future-discussion-points&quot;&gt;Future Discussion Points:&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What is the idea and use of kernel stack and how is it different form any other kind of stack like user stack?&lt;/li&gt;
+  &lt;li&gt;What are the various items stored in heap or stack while process execution.&lt;/li&gt;
+  &lt;li&gt;What is the idea of space sharing in process creation and execution.&lt;/li&gt;
+  &lt;li&gt;What are the differences between fork() and exec() system calls?&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Chapter 4</summary></entry><entry><title type="html">OS Discussion - Session 1</title><link href="http://localhost:4000/2018/OS-talk-1" rel="alternate" type="text/html" title="OS Discussion - Session 1" /><published>2018-01-26T00:16:30+05:30</published><updated>2018-01-26T00:16:30+05:30</updated><id>http://localhost:4000/2018/OS-talk-1</id><content type="html" xml:base="http://localhost:4000/2018/OS-talk-1">&lt;p&gt;Reference: &lt;a href=&quot;http://pages.cs.wisc.edu/~dusseau/Classes/CS537-F07/Lectures/lecture1.pdf&quot;&gt;Slide - Overview&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;key-discussion-points&quot;&gt;Key Discussion Points:&lt;/h4&gt;
 &lt;ul&gt;

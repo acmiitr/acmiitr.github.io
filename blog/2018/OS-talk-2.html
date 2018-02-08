@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACM Student Chapter &middot; IIT Roorkee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./script/materialize.js"></script>	
+	<link rel="stylesheet" href="./assets/index.css">
+	<link rel="stylesheet" href="./assets/main.css">
+	<link rel="stylesheet" href="./../assets/index.css">
+	<link rel="stylesheet" href="./../assets/main.css">
+
+	
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://hareshkh.github.io/acmiitr/index.html#home">ACM, IIT Roorkee</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://hareshkh.github.io/acmiitr/index.html#home">HOME</a></li>
+                <li><a href="https://hareshkh.github.io/acmiitr/index.html#initiatives">INITIATIVES</a></li>
+                <li><a href="https://hareshkh.github.io/acmiitr/index.html#events">EVENTS</a></li>
+                <li><a href="https://hareshkh.github.io/acmiitr/index.html#team">TEAM</a></li>
+                <li><a href="https://hareshkh.github.io/acmiitr/blog/index.html" class="li.active">BLOG</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header" style="margin-top: 80px">
+        <h1 class="post-title" itemprop="name headline">OS Discussion - Session 2</h1>
+        <p class="post-meta">
+            <time datetime="2018-01-30T00:16:30+05:30" itemprop="datePublished">Jan 30, 2018</time></p>
+    </header>
+    <div class="post-content" itemprop="articleBody">
+        <h2 id="chapter-4">Chapter 4</h2>
+
+<p>Date: 26th Jan 2018
+Reference:</p>
+<ol>
+  <li><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-virtualization.pdf">Virtualization - Dialogue</a></li>
+  <li><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf">Virtualization - Processes</a></li>
+  <li><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf">Virtualization - Process API</a></li>
+</ol>
+
+<h5 id="the-abstraction-the-process">The Abstraction: The process</h5>
+
+<ol>
+  <li>Process: Simply a running program.
+    <ul>
+      <li>Program is just a bunch of instructions.</li>
+      <li>OS takes these instructions and sets them running.</li>
+      <li>Transforms a program into a process.</li>
+    </ul>
+  </li>
+  <li>Virtualisation: The illusion that each process has its own CPU.
+    <ul>
+      <li>There are a lot of process running simultaneously.</li>
+      <li>Each process needs to access CPU resources.</li>
+      <li>Time sharing is a method used to share the CPU time among processes.</li>
+      <li>Each process feels that the entire CPU is dedicated to it.</li>
+      <li>But in reality, CPU shares its resources with everybody.</li>
+    </ul>
+  </li>
+  <li>How to accomplish virtualisation ?
+    <ul>
+      <li>Mechanisms: Low level machinery.</li>
+      <li>Example: Context Switch which allows to switch between processes for time sharing.</li>
+      <li>Policies: High level machinery.</li>
+      <li>Policies are used for decision making in the OS.</li>
+      <li>Example: Job scheduling policies like LRU to decide which programs should be run.</li>
+    </ul>
+  </li>
+  <li>Process API: Interfaces used to directly interact with the OS.
+    <ul>
+      <li>Create: Interface for creating a new process.</li>
+      <li>Destroy: Interface to forcefully killing a particular process if not shut automatically.</li>
+      <li>Wait : Waiting interface to wait for a process to do something.</li>
+      <li>Status: Interface to get status info.</li>
+      <li>Miscellaneous Control: Interface for other purpose like suspending a certain application.</li>
+    </ul>
+  </li>
+  <li>Process Creation:
+    <ul>
+      <li>OS loads data and code from disk to main memory.</li>
+      <li>Earlier: Eager Loading, i.e, all loaded at ones.</li>
+      <li>Now: Lazy Loading, i.e, Load most important parts.</li>
+      <li>Some memory for program’s run time stack.</li>
+      <li>Stack: Local variables , function parameters, return addresses, etc.</li>
+      <li>Some memory for heap used for dynamically allocated data.</li>
+      <li>Heap: Used for linked list, trees, hash tables, etc.</li>
+    </ul>
+  </li>
+  <li>Process States:
+    <ul>
+      <li>Running: Process running on a processor</li>
+      <li>Ready: Ready to run but currently not run by OS at the given moment.</li>
+      <li>Blocked: Process not ready to run until some event like I/O occurs.</li>
+    </ul>
+  </li>
+  <li>Data Structures: OS wants to know what the process is doing.  Hence, some data structures are required to maintain relevant info. About the process.
+    <ul>
+      <li>Process Control Block(PCB) : Analogous to a process list.</li>
+      <li>PCBs keeps track of all running programs of the system.</li>
+      <li>Every process has a particular execution context.</li>
+      <li>Executions contexts are used for context switching between processes for time sharing.</li>
+    </ul>
+  </li>
+</ol>
+
+<h5 id="future-discussion-points">Future Discussion Points:</h5>
+
+<ol>
+  <li>What is the idea and use of kernel stack and how is it different form any other kind of stack like user stack?</li>
+  <li>What are the various items stored in heap or stack while process execution.</li>
+  <li>What is the idea of space sharing in process creation and execution.</li>
+  <li>What are the differences between fork() and exec() system calls?</li>
+</ol>
+
+    </div>
+    
+</article>
+      </div>
+    </main>
+
+    <div class="container-fluid" id="footer">
+    <div class="container-fluid">
+        <div class="row vcenter">
+            <div class="col-sm-4">
+                Department of Computer Science and Engineering,
+                <br> Indian Institute of Technology Roorkee,
+                <br> Roorkee, Uttarakhand - 247667,
+                <br> India.
+            </div>
+            <div class="col-sm-3 text-center">
+                <h3 class="subheading">Contact</h3>
+                <div>
+                    <div class="round-button vcenter"><a href="mailto:acmiitr@gmail.com"><i class="fa fa-envelope"></i></a></div>
+                    <div class="round-button vcenter"><a href="https://facebook.com/acmiitr"><i class="fa fa-facebook-f"></i></a></div>
+                </div>
+            </div>
+            <div class="col-sm-5 intrinsic-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d899.6210410931732!2d77.89555325170318!3d29.86334130862429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92a1d55eaf85c035!2sDepartment+of+Computer+Science+and+Engineering!5e0!3m2!1sen!2sin!4v1488304692596" width="310" height="550" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <p>ACM Student Chapter - IIT Roorkee · © 2017</p>
+    </div>
+</div>
+
+  </body>
+
+</html>
